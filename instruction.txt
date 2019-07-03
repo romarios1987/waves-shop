@@ -1,0 +1,13 @@
+// Instaling libraires
+bcrypt
+body-parser
+cloudinary
+concurrently
+cookie-parser
+dotenv
+express
+express-formidable
+jsonwebtoken
+moment
+mongoose
+multer
