@@ -11,3 +11,6 @@ jsonwebtoken
 moment
 mongoose
 multer
+
+
+git rm -r --cached .idea
