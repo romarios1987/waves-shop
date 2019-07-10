@@ -26,12 +26,9 @@ const {Product} = require('./models/product');
 const {auth} = require('./middleware/auth');
 const {admin} = require('./middleware/admin');
 
-
 /**********************************
  * ***************PRODUCTS***********
  ***********************************/
-
-
 
 // by ARRIVAL
 // /articles?sortBy=createdAt&order=desc&limit=2

@@ -4,3 +4,8 @@
 node_modules/
 
 /yarn.lock
+Будет удалено README.md
+Будет удалено package.json
+Будет удалено public/
+Будет удалено src/
+Будет удалено yarn.lock

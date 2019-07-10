@@ -14,3 +14,9 @@ multer
 
 
 git rm -r --cached .idea
+
+
+
+dependencies for CLIENT
+
+yarn add @fortawesome/fontawesome @fortawesome/fontawesome-free-solid @fortawesome/react-fontawesome @material-ui/core axios react-images react-redux react-router-dom react-slick redux redux-promise redux-thunk react-dropzone react-moment react-paypal-express-checkout
