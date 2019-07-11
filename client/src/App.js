@@ -1,22 +1,11 @@
-import React, {Component} from 'react';
-import axios from 'axios';
+import React from 'react';
 
-class App extends Component {
-
-    componentDidMount() {
-        axios.get('/api/product/brands').then((response) => {
-            console.log(response);
-        })
-    }
-
-
-    render() {
-        return (
-            <div>
-                <h1>Hello world</h1>
-            </div>
-        );
-    }
-}
+const App = () => {
+    return (
+        <div>
+            
+        </div>
+    );
+};
 
 export default App;
