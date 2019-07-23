@@ -31,15 +31,15 @@ const {admin} = require('./middleware/admin');
  ***********************************/
 
 // by ARRIVAL
-// /articles?sortBy=createdAt&order=desc&limit=2
+// /articles?sort_by=createdAt&order=desc&limit=2
 
 // by SELL
-// /articles?sortBy=sold&order=desc&limit=50
+// /articles?sort_by=sold&order=desc&limit=50
 
 app.get('/api/product/articles', (req, res) => {
-
+    console.log(req.query);
     let order = req.query.order ? req.query.order : 'asc';
-    let sortBy = req.query.sortBy ? req.query.sortBy : '_id';
+    let sortBy = req.query.sort_by ? req.query.sort_by : '_id';
     let limit = req.query.limit ? parseInt(req.query.limit) : 100;
 
 
