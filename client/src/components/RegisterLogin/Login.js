@@ -92,7 +92,6 @@ class Login extends Component {
                         id={'password'}
                         formData={this.state.formData.password}
                         change={(element) => this.updateForm(element)}
-
                     />
 
                     {this.state.formError ?
