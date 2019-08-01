@@ -9,7 +9,7 @@ export const validate = (element, formData = []) => {
     }
 
     if (element.validation.confirm) {
-        const valid = element.value.trim() ===  formData[element.validation.confirm].value;
+        const valid = element.value.trim() === formData[element.validation.confirm].value;
         const message = `${!valid ? 'Passwords do not match' : ''}`;
         error = !valid ? [valid, message] : error;
     }
@@ -50,7 +50,8 @@ export const generateData = (formData, formName) => {
     let dataToSubmit = {};
 
     for (let key in formData) {
-        if(key !== 'confirm_password'){
+        if (formData.hasOwnProperty(key) && key !== 'confirm_password') {
+
             dataToSubmit[key] = formData[key].value;
         }
     }
@@ -65,7 +66,12 @@ export const isFormValid = (formData, formName) => {
 
 
     for (let key in formData) {
-        formIsValid = formData[key].valid && formIsValid;
+
+        if (formData.hasOwnProperty(key)) {
+            formIsValid = formData[key].valid && formIsValid;
+        }
+
+
     }
 
     return formIsValid;

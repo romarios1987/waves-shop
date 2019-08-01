@@ -2,7 +2,6 @@ import React from 'react';
 import UserLayout from "../../hoc/user-layout";
 import CustomButton from "../utils/custom_button";
 
-
 const Dashboard = () => {
     return (
         <UserLayout>

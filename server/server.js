@@ -161,11 +161,11 @@ app.get('/api/product/brands', (req, res) => {
 app.get('/api/users/auth', auth, (req, res) => {
     res.status(200).json({
         // user: req.user
-
         isAdmin: req.user.role !== 0,
-        iAuth: true,
-        email: req.user.first_name,
-        name: req.user.last_name,
+        isAuth: true,
+        email: req.user.email,
+        last_name: req.user.last_name,
+        first_name: req.user.first_name,
         role: req.user.role,
         cart: req.user.cart,
         history: req.user.history

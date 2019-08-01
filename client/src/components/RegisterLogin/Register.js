@@ -24,7 +24,7 @@ class Register extends Component {
                 config: {
                     name: 'first_name_input',
                     type: 'text',
-                    placeholder: 'Enter your first_name'
+                    placeholder: 'Enter your First Name'
                 },
                 validation: {
                     required: true,
@@ -39,7 +39,7 @@ class Register extends Component {
                 config: {
                     name: 'last_name_input',
                     type: 'text',
-                    placeholder: 'Enter your last_name'
+                    placeholder: 'Enter your Last Name'
                 },
                 validation: {
                     required: true,
@@ -85,7 +85,7 @@ class Register extends Component {
                 config: {
                     name: 'confirm_password_input',
                     type: 'password',
-                    placeholder: 'Enter your confirm_password'
+                    placeholder: 'Confirm your password'
                 },
                 validation: {
                     required: true,
@@ -131,7 +131,7 @@ class Register extends Component {
                         this.setState({formError: true})
                     }
                 }).catch((error) => {
-                this.setState({formError: error})
+                this.setState({formError: true})
             })
         } else {
             this.setState({formError: true})
